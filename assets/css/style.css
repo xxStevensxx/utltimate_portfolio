@@ -1,7 +1,14 @@
+body{
+  background-image: url("../images/akuma_background.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100% 100% 100%;
+}
+
 #about_me{
   width: 100%;
   height: 20%;
   background-color: #2a52be;
+  opacity: 0.8;
 }
 
 #avatar{
@@ -17,4 +24,48 @@
   font-size: 3em;
   color: white;
   text-align: center;
+}
+
+#my_project{
+  margin: 5%;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+
+#left_side{
+  display: grid;
+  grid-column-gap:5px;
+}
+
+#vertical_line{
+  margin: auto;
+  padding: auto 0;
+  height: 100%;
+  width: 5px;
+  background-color: blue;
+}
+
+#right_side{
+  display: grid;
+  grid-column-gap:5px;
+}
+
+.left_parallelogramme{
+  width: 75%;
+  height: 200px;
+  margin: 5%;
+  transform: skewX(30deg);
+  background-color: gold;
+}
+
+.right_parallelogramme{
+  width: 75%;
+  height: 200px;
+  margin: 5%;
+  transform: skewX(30deg);
+  background-color: gold;
+}
+
+#footer{
+  background-color: green;
 }
