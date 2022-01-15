@@ -1,0 +1,55 @@
+:root{
+  --custom-purple : #2B0E3A;
+  --custom-orange : #ED6160;
+  --custom-blue : #12466E;
+  --custom-yellow : #ECE040;
+  --custom-pink : #BE19D0;
+  --custom-darkPink : #750832;
+}
+
+#me_circle{
+  position: fixed;
+  top: 40%;
+  right: 50%;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  background-color: var(--custom-orange);
+}
+
+#about_me_content p{
+  opacity: 1;
+  display: none;
+  -webkit-transition: opacity 0.3s ease-in-out;
+}
+
+#skills_circle{
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  background-color: var(--custom-blue);
+}
+
+#projects_circle{
+  position: fixed;
+  bottom: 40%;
+  right: 50%;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  background-color: var(--custom-yellow);
+}
+
+
+#bonus_circle{
+  position: fixed;
+  bottom: 40%;
+  left: 50%;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  background-color: var(--custom-pink);
+}

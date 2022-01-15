@@ -1,4 +1,14 @@
+:root{
+  --text-bg-color : black;
+  --project-bg-color : silver;
+  --footer-bg-color : grey;
+  --menu-bg-color : gold;
+}
+
 body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
   background-image: url("../images/akuma_background.png");
   background-repeat: no-repeat;
   background-size: 100% 100% 100% 100%;
@@ -7,7 +17,34 @@ body{
 #about_me{
   width: 100%;
   height: 20%;
-  background-color: #2a52be;
+  background-color: var(--text-bg-color);
+  opacity: 0.9;
+}
+
+#navigation_container{
+  width: 45%;
+  margin:  0 auto;
+  padding: 0 auto;
+}
+
+#unordonize_list{
+  display: grid;
+  padding: 0;
+  grid-template-columns: 25% 25% 25% 25%;
+  justify-content: center;
+  border: solid 3px var(--text-bg-color);
+  text-align: center;
+}
+
+
+#unordonize_list li{
+  font-size: 3em;
+  color: white;
+  list-style: none;
+}
+
+.menu:hover{
+  background-color: var(--menu-bg-color);
   opacity: 0.8;
 }
 
@@ -34,38 +71,119 @@ body{
 
 #left_side{
   display: grid;
-  grid-column-gap:5px;
+  grid-row-gap:5%;
+  position: relative;
+  left: 30%;
 }
 
 #vertical_line{
   margin: auto;
   padding: auto 0;
   height: 100%;
-  width: 5px;
-  background-color: blue;
+  width: 10px;
+  background-color: var(--text-bg-color);
 }
 
 #right_side{
   display: grid;
-  grid-column-gap:5px;
+  grid-row-gap:5%;
+  position: relative;
+  right: 15%;
 }
 
 .left_parallelogramme{
-  width: 75%;
-  height: 200px;
-  margin: 5%;
+  width: 85%;
+  height: 250px;
+  margin: 0;
   transform: skewX(30deg);
-  background-color: gold;
+  /* background-color: var(--project-bg-color); */
+}
+
+.left_parallelogramme  figure{
+  margin: 0;
+  height: 250px;
 }
 
 .right_parallelogramme{
-  width: 75%;
-  height: 200px;
+  width: 85%;
+  height: 250px;
+  margin: 0;
+  transform: skewX(-30deg);
+  background-color: var(--project-bg-color);
+}
+
+.right_parallelogramme  figure{
+  margin: 0;
+  height: 250px;
+}
+
+.project_img{
+  width: 100%;
+  height: 250px;
+}
+
+.calque_hover{
+  display: block;
+  opacity: 0;
+  position: relative;
+  bottom: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: var(--project-bg-color);
+
+}
+
+.calque_hover:hover{
+  opacity: 0.5;
+}
+
+.project_description{
+  margin: 0;
+  text-align: center;
+  font-size: 3em;
+  color: white;
+  opacity: 1 !important;
+}
+
+#my_skills{
+  background-color: var(--text-bg-color);
+  opacity: 0.9;
+}
+
+#about_my_skill{
+  font-size: 3em;
+  text-align: center;
+  color: white;
+}
+
+#range_skills{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+#left_side_skills{
   margin: 5%;
-  transform: skewX(30deg);
-  background-color: gold;
+}
+
+#right_side_skills{
+  margin: 5%;
+}
+
+/* .range_label{
+  color: white;
+  font-size: 3em;
+} */
+
+.progress_range{
+  border: solid 5px white;
+  margin: 5%;
+  color: white;
+  font-size: 2em;
 }
 
 #footer{
-  background-color: green;
+  height: 200px;
+  width: 100%;
+  bottom: 0;
+  background-color: var(--footer-bg-color );
 }
